@@ -1,0 +1,22 @@
+doctype html
+html 
+    head 
+        title= "Integrating With HubSpot I Practicum"
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Homes
+        table
+          tr
+              th Address
+              th Asking Price 
+              th Year Built
+          tr
+              each home in data
+                tr
+                  td #{home.properties.address}
+                  td $#{home.properties.asking_price}
+                  td #{home.properties.year_built}
+
+        .footer
+            a(href='/update-cobj') Add to this table
