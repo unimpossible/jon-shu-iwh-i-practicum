@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        title Update Custom Object Form | Integrating With HubSpot I Practicum
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            form(method="POST")
+                label(for="address") Address
+                input(type="text" name="address" required)
+
+                label(for="asking_price") Asking Price
+                input(type="number" name="asking_price")
+
+                label(for="year_built") Year Built
+                input(type="number" name="year_built")
+
+                input(type="submit" value="Submit")
+                br
+                a(href='/') Return to the homepage
